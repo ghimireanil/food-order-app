@@ -1,5 +1,5 @@
-import React from "react";
-import style from "./RestaurantDetail.module.css";
+import React from 'react';
+import style from './RestaurantDetail.module.css';
 
 export function RestaurantDetail(props) {
   const {
@@ -37,7 +37,7 @@ export function RestaurantDetail(props) {
               <div>
                 <strong> Food 🍔🍿🍛</strong>
                 <p> {foodReview}</p>
-                <br />
+
                 <strong> Environment☀⛈ </strong>
                 <p> {envReview}</p>
               </div>
@@ -58,7 +58,7 @@ export function RestaurantDetail(props) {
       </div>
       <div className={style.menu}>
         <strong> Menu </strong>
-        <img className={style.menuImage} src="/Images/menu.png" />
+        <img className={style.menuImage} src='/Images/menu.png' />
       </div>
 
       {/* <div className={style.gallery}>Gallery</div> */}

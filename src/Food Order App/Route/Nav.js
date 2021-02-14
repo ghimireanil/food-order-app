@@ -1,25 +1,26 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import './Nav.css';
 
 export const Nav = () => {
   const navStyle = {
-    color: "white",
+    color: 'white',
   };
   return (
-    <nav>
-      <ul className="nav-links">
-        <Link style={navStyle} to="/Menu">
+    <nav className='navi'>
+      <ul className='nav-links'>
+        <Link style={navStyle} to='/Menu'>
           <li>Menu</li>
         </Link>
 
-        <Link style={navStyle} to="/OrderOnline">
+        <Link style={navStyle} to='/OrderOnline'>
           <li>Order Online</li>
         </Link>
 
-        <Link style={navStyle} to="/Review">
+        <Link style={navStyle} to='/Review'>
           <li>Review</li>
         </Link>
-        <Link style={navStyle} to="/Gallery">
+        <Link style={navStyle} to='/Gallery'>
           <li>Gallery</li>
         </Link>
       </ul>

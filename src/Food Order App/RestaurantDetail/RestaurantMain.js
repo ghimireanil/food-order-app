@@ -28,7 +28,7 @@ export function RestaurantMain() {
   // console.log(id);
 
   return (
-    <div className='App'>
+    <div className='app'>
       <div>
         <Image image={restaurant.banner_image} />
         <Routing />
@@ -52,7 +52,7 @@ export function RestaurantMain() {
               contact={restaurant.social.contact}
               features={
                 <ul>
-                  <li>
+                  <li style={{ listStyle: 'none' }}>
                     AC: {restaurant.features.ac ? '✅' : '❌'}
                     <br />
                     Delivery: {restaurant.features.delivery ? '✅' : '❌'}
@@ -76,7 +76,7 @@ export function RestaurantMain() {
               serviceReview={restaurant.review.service.toFixed(1)}
               restType={restaurant.restaurant_type.map((type) => (
                 <ul>
-                  <li> {type}</li>
+                  <li style={{ paddingLeft: '1em' }}> {type}</li>
                 </ul>
               ))}
               name={restaurant.name}
@@ -118,7 +118,7 @@ export function RestaurantMain() {
                       fontSize: '25px',
                     }}
                   >
-                    🦹🏼 {user.userId.username}:
+                    🦹🏼 {user.userId.username}
                   </li>
 
                   {/* {(user.food + user.environment + user.service + user.price) /

@@ -1,5 +1,5 @@
-import React from "react";
-import style from "./RestaurantDetail.module.css";
+import React from 'react';
+import style from './RestaurantDetail.module.css';
 
 export function ReviewList(props) {
   const { reviewComment, reviewUser, reviewAverage } = props;
@@ -12,7 +12,7 @@ export function ReviewList(props) {
         <div className={style.getRev}>
           <div className={style.getReviews}>{reviewUser}</div>
           <div
-            style={{ color: "chocolate", fontWeight: "bolder" }}
+            style={{ color: 'chocolate', fontWeight: 'bolder' }}
             className={style.getReviews}
           >
             {reviewAverage}

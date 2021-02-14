@@ -1,0 +1,21 @@
+.navi {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: orange;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  margin-bottom: 1rem;
+
+  border-radius: 8px;
+  min-height: 8vh;
+}
+.nav-links {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  flex-direction: row;
+  font-size: 20px;
+}

@@ -1,15 +1,16 @@
-.App {
+.app {
   background-color: coral;
 }
 .image {
   width: 95%;
   height: 10%;
+  margin-left: 2rem;
 }
 .images {
   display: flex;
   width: 50%;
   height: 10%;
-  margin-left: 1rem;
+  margin-left: 5rem;
 }
 .restro {
   background-color: white;
@@ -23,8 +24,15 @@
   text-align: left;
   font-size: 20px;
   justify-content: space-between;
-  line-height: 0%;
+  line-height: 1rem;
+  margin-top: 10px;
+  color: chocolate;
 }
+.text li {
+  list-style: none;
+  text-transform: capitalize;
+}
+
 .features {
   text-align: right;
   justify-content: right;
@@ -40,26 +48,31 @@
   text-align: left;
   align-items: center;
   background-position: unset;
+  color: chocolate;
 }
 
 .rev {
   display: inline-flex;
   font-size: 25px;
   font-family: serif;
-  line-height: 2px;
+  line-height: 25px;
   font-weight: bold;
+  margin-top: -1rem;
 }
 .rev > div p {
   text-align: center;
-  margin-left: 0rem;
+  margin-left: 1rem;
 }
 .rev > div {
-  margin: 15px;
   font-size: 25px;
   font-weight: bold;
+  margin-left: 1rem;
 }
 .revHead {
   display: inline-flex;
+  text-align: center;
+  margin-left: 3rem;
+  margin-top: 2rem;
 }
 .revHead p {
   font-size: 25px;
@@ -92,7 +105,10 @@
   flex-direction: column;
   margin: 20px;
   text-align: left;
-  line-height: 0px;
+  line-height: 10px;
+}
+.getReviews li {
+  list-style: none;
 }
 
 .menuList {
@@ -104,6 +120,9 @@
   box-shadow: 0px 2px 20px rgb(71, 71, 71);
   border-radius: 20px;
   margin: 20px;
+}
+.menuList li {
+  list-style: none;
 }
 .getMenuList {
   display: flex;
@@ -117,14 +136,14 @@
 }
 
 .commaList {
-  display: inline;
+  display: flex;
+  text-transform: capitalize;
 }
 .commaList li {
   display: inline;
+  font-stretch: extra-expanded;
 }
-.commaList li::after {
-  content: " ";
-}
+
 .gallery {
   margin-bottom: 1rem;
 }
