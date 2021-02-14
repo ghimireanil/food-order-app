@@ -71,12 +71,12 @@ function Login() {
         </form>
 
         <p>
-          By signing-in you agree to the FoodHub's terms and conditions. Please
-          see our Privacy Notice to review.
+          By signing-in you agree to the HamroFood's terms and conditions.
+          Please see our Privacy Notice to review.
         </p>
 
         <button onClick={register} className='login__registerButton'>
-          Create your FoodHub Account
+          Create your HamroFood Account
         </button>
       </div>
     </div>

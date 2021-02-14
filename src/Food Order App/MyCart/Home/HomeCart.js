@@ -1,15 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import './Home.css';
 import Product from '../Product/Product';
-import Thali from '../images/thali.png';
-import Variety from '../images/variety.png';
-import Momo from '../images/momo.png';
-import Sekuwa from '../images/sekuwa.png';
-import Roti from '../images/roti.png';
-import Featured from '../images/featured.png';
+// import { useParams } from 'react-router-dom';
 
 function HomeCart() {
   const [restaurants, setRestaurants] = useState([]);
+  // let { id } = useParams();
 
   const renderRestaurants = useEffect(() => {
     fetch(
@@ -24,6 +20,7 @@ function HomeCart() {
         console.error(err);
       });
   }, []);
+
   return (
     <div className='home'>
       <div className='home__container'>

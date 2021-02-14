@@ -21,7 +21,7 @@ function Header() {
       {/* <Link to='/'>FOODHUB</Link> */}
       <NavLogo to='/'>
         <NavIcon />
-        FOODHUB
+        HamroFood
       </NavLogo>
       <div className='header__search'>
         <input

@@ -6,23 +6,27 @@ import { RestaurantDetail } from './RestaurantDetail';
 import { ReviewList } from './ReviewList';
 import { Routing } from '../Route/Routing';
 import './RestaurantDetail.module.css';
+import { useParams } from 'react-router-dom';
 
-export function RestaurantMain({ match }) {
+export function RestaurantMain() {
   const [restaurant, setRestaurant] = useState({});
   const [review, setReview] = useState([]);
+  let { id } = useParams();
 
   useEffect(async () => {
-    const response = await axios.get(`/restaurant/details/${match.params.id}`);
+    const response = await axios.get(`/restaurant/details/${id}`);
     console.log(response.data.data);
     setRestaurant(response.data.data);
   }, []);
 
   useEffect(async () => {
-    const response = await axios.get(`/restaurant/review/${match.params.id}`);
+    const response = await axios.get(`/restaurant/review/${id}`);
     console.log(response.data.data);
 
     setReview(response.data.data);
   }, []);
+  // console.log(id);
+
   return (
     <div className='App'>
       <div>
